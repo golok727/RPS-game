@@ -9,8 +9,56 @@
     <script src="/src/radhe.js" defer type="module"></script>
   </head>
   <body>
-    <div data-game-container class="game_container">
+    <div data-game-container class="game-container">
       <!-- <h1>Radhey Shyam</h1> -->
+
+      <div class="game-container__score-board">
+        <div class="game-container__score-board__img">
+          <img src="/assets/images/logo.svg" alt="" />
+        </div>
+        <div class="game-container__score-board__score">
+          <span>SCORE</span>
+          <h2 data-score-count>0</h2>
+        </div>
+      </div>
+      <!-- main game  -->
+
+      <div class="game_container__game">
+        <div class="game-container__game__choices">
+          <img src="assets/images/bg-triangle.svg" alt="" srcset="" />
+
+          <div class="each-choice" data-choice-type="paper">
+            <img src="/assets/images/icon-paper.svg" alt="" srcset="" />
+          </div>
+
+          <div class="each-choice" data-choice-type="scissors">
+            <img src="/assets/images/icon-scissors.svg" alt="" srcset="" />
+          </div>
+
+          <div class="each-choice" data-choice-type="rock">
+            <img src="/assets/images/icon-rock.svg" alt="" srcset="" />
+          </div>
+        </div>
+      </div>
     </div>
+
+    <!-- RULES -->
+
+    <div data-rules-modal class="rules hidden">
+      <div class="modal">
+        <header>
+          <h2>RULES</h2>
+          <img
+            data-close-rules
+            class="close-btn"
+            src="/assets/images/icon-close.svg"
+            alt=""
+            srcset=""
+          />
+        </header>
+        <img src="/assets/images/image-rules.svg" alt="" />
+      </div>
+    </div>
+    <button data-open-rules class="btn-rules">RULES</button>
   </body>
 </html>
