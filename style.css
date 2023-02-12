@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+:root {
+  --gradient-radial: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  --clr-dark-text: hsl(229, 25%, 31%);
+  --clr-score-text: hsl(229, 64%, 46%);
+  --clr-header-outline: hsl(217, 16%, 45%);
+  --clr-white: hsl(0, 0%, 100%);
+}
+body {
+  background-image: var(--gradient-radial);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  color: var(--clr-white);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+.game_container {
+  max-width: 1280px;
+  margin-inline: auto;
+}
