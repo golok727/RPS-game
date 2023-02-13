@@ -18,25 +18,70 @@
         </div>
         <div class="game-container__score-board__score">
           <span>SCORE</span>
-          <h2 data-score-count>0</h2>
+          <h2 class="focus-in" data-score-count>0</h2>
         </div>
       </div>
       <!-- main game  -->
 
       <div class="game_container__game">
-        <div class="game-container__game__choices">
-          <img src="assets/images/bg-triangle.svg" alt="" srcset="" />
+        <div data-user-choices class="game-container__game__choices">
+          <img
+            src="assets/images/bg-triangle.svg"
+            class="tri"
+            alt=""
+            srcset=""
+          />
 
-          <div class="each-choice" data-choice-type="paper">
+          <div class="each-choice game" data-choice-type="paper">
             <img src="/assets/images/icon-paper.svg" alt="" srcset="" />
           </div>
 
-          <div class="each-choice" data-choice-type="scissors">
+          <div class="each-choice game" data-choice-type="scissors">
             <img src="/assets/images/icon-scissors.svg" alt="" srcset="" />
           </div>
 
-          <div class="each-choice" data-choice-type="rock">
+          <div class="each-choice game" data-choice-type="rock">
             <img src="/assets/images/icon-rock.svg" alt="" srcset="" />
+          </div>
+        </div>
+        <!-- Winner Menu -->
+        <div class="hidden winner-menu" data-winner-menu="">
+          <div class="left">
+            <h3>You Picked</h3>
+
+            <div
+              class="each-choice winner-page"
+              data-choice-type="paper"
+              data-type="user"
+            >
+              <img
+                src="/assets/images/icon-paper.svg"
+                data-img-choice
+                alt=""
+                srcset=""
+              />
+            </div>
+          </div>
+
+          <div class="mid">
+            <h1>YOU WON</h1>
+            <button class="">PLAY AGAIN</button>
+          </div>
+
+          <div class="right">
+            <h3>The HOUSE PICKED</h3>
+            <div
+              class="each-choice winner-page"
+              data-choice-type="rock"
+              data-type="computer"
+            >
+              <img
+                src="/assets/images/icon-rock.svg"
+                data-img-choice
+                alt=""
+                srcset=""
+              />
+            </div>
           </div>
         </div>
       </div>
